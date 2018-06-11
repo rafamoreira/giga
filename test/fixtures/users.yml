@@ -1,0 +1,15 @@
+userOne:
+  name: FirstNameOne 
+  surname: SurnameOne
+  title: Mr
+  email: one@example.com
+  picture: http://example.com/example.jpg
+  gender: male
+
+userTwo:
+  name: FirstNameTwo 
+  surname: SurnameTwo 
+  title: Mrs 
+  email: two@example.com 
+  picture: http://example.com/example.jpg 
+  gender: female
