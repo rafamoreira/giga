@@ -18,11 +18,12 @@ class UsersImport
 
   def create_user(user)
     new_user = User.new(
-      name:     user["name"]["first"],
-      surname:  user["name"]["last"],
-      title:    user["name"]["title"],
-      email:    user["email"],
-      gender:   user["gender"]
+      name:               user["name"]["first"],
+      surname:            user["name"]["last"],
+      title:              user["name"]["title"],
+      email:              user["email"],
+      gender:             user["gender"],
+      remote_picture_url: user["picture"]["large"]
     )
     new_user.save
   end
