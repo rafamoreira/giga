@@ -1,0 +1,10 @@
+<div class="col-sm-6 col-md-3">
+  <div class="card" style="font-size: 0.8em; margin-bottom: 30px;">
+    <%= image_tag(user.picture_url, class: "card-img-top") if user.picture? %>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><%= t user.title %> <%= user.fullname %></li>
+      <li class="list-group-item">Email:<br> <%= user.email %></li>
+      <li class="list-group-item">Gênero: <%= t user.gender %></li>
+    </ul>
+  </div>
+</div>
