@@ -29,6 +29,8 @@ gem 'fog-aws', '~> 3.0'
 gem 'kaminari', '~> 1.1'
 # bootstrap
 gem 'bootstrap', '~> 4.1.1'
+gem 'rails-i18n', '~> 5.1'
+gem 'pg_search', '~> 2.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
