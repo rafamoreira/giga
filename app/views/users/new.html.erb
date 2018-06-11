@@ -1,4 +1,13 @@
-<%= form_for :import_users, url: "/users" do |form| %>
-  <%= form.text_field :seed, value: "giga" %>
-  <%= form.submit %>
-<% end %>
+<div class="col">
+  <%= form_tag('/users', class: 'form-inline') do |form| %>
+    <%= label_tag :seed, nil, class: 'col-sm-2 col-form-label' %>
+    <%= text_field_tag :seed, 'giga', class: 'form-control mb-2 mr-sm-2' %>
+
+    <%= submit_tag 'Importar', class: 'btn btn-primary mb-2' %>
+  <% end %>
+</div>
+
+<div class="col">
+  <%= link_to 'Voltar', users_path, class: 'btn btn-secondary mb-2',
+    style: 'margin-left: 30px;' %>
+</div>

@@ -3,8 +3,8 @@ class UsersController < ApplicationController
   end
 
   def create
-    import_result = UsersImport.new(params["import_users"]["seed"])
-    redirect_to root_path, notice: "#{import_result.success} registros inseridos - #{import_result.failure} falha(s)"
+    import_result = UsersImport.new(params[:seed])
+    redirect_to users_path, notice: "#{import_result.success} registros inseridos - #{import_result.failure} falha(s)"
   end
 
   def index

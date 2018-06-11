@@ -9,6 +9,7 @@
 
   <% end %>
   <%= link_to 'Limpar', root_path, class: 'btn btn-secondary mb-2', style: 'margin-left: 25px' %>
+  <%= link_to 'Importar usuários', new_user_path, class: 'btn btn-danger mb-2', style: 'margin-left: 25px' %>
 </div>
 <div class="row">
   <%= render partial: 'user', collection: @users %>
